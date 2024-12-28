@@ -33,23 +33,15 @@ CREATE TABLE Netflix(
 );
 ```
 ## Business Problems and Solutions
-# 1. Count the Number of Movies vs TV Shows
+### 1. Count the Number of Movies vs TV Shows
 ```sql
 select movie_type, count(movie_type) as movies
 from Netflix
 Group by movie_type
 ```
-# Objective: Determine the distribution of content types on Netflix.
+##### Objective: Determine the distribution of content types on Netflix.
 
-# 1. Count the Number of Movies vs TV Shows
-```sql
-select movie_type, count(movie_type) as movies
-from Netflix
-Group by movie_type
-```
-# Objective: Determine the distribution of content types on Netflix.
-
-# 2. Find the Most Common Rating for Movies and TV Shows
+### 2. Find the Most Common Rating for Movies and TV Shows
 ```sql
 with temp as(
 select movie_type, rating, count(rating) as common_rating_count,
