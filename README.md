@@ -1,1 +1,2 @@
-# Netflix_Analysis_SQL
+# Netflix Movies and TV Shows Analysis by SQL
+![Netflix Logo]()
